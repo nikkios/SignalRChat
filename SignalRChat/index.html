@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>ONi Chat</title>
+    <style type="text/css">
+        .container {
+            background-color: #99CCFF;
+            border: thick solid #808080;
+            padding: 20px;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <table>
+            <tr>
+                <td style="width: 600px"> 
+                    <input type="text" id="message" />
+                    <input type="button" id="sendmessage" value="Send" />
+                    <input type="hidden" id="displayname" />
+                    <ul id="discussion">
+                    </ul>
+                </td>
+                <td style="vertical-align: top;">
+                    <ul id="users" >
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <!--Script references. -->
+    <!--Reference the jQuery library. -->
+    <script src="Scripts/jquery-2.1.4.min.js" ></script>
+    <!--Reference the SignalR library. -->
+    <script src="Scripts/jquery.signalR-2.2.0.min.js"></script>
+    <script src="signalr/hubs"></script>
+    
+    <!--Custom javascript-->
+    <script src="Scripts/Index.js"></script>
+
+</body>
+</html>
